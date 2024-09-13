@@ -1,6 +1,6 @@
 # Placeholder for detail.php
 <?php
-inlcude('index.php');
+include('index.php');
 $index = $_GET['index'];
 ?>
 <head>
@@ -8,7 +8,7 @@ $index = $_GET['index'];
 </head>
 <body>
   <h1><?= $blog[$index]['title'] ?> </h1>
-  <h2><?= $blog[$index]['content']?> </h2>
-  <p><?= $blog[$index]['author'] ?></p>
-  <p><?= $blog[$index]['date'] ?></p>
+  <p><?= $blog[$index]['content']?> </p>
+  <h4><?= $blog[$index]['author'] ?></h4>
+  <h4><?= $blog[$index]['date'] ?></h4>
 </body>
