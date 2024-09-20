@@ -1,5 +1,14 @@
-$index = $_GET['index'];
+<?php
+
+    $content=file_get_contents('posts.json');
+    $blog=json_decode($content, true);
+
+    $index = $_GET['index'];
 ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
